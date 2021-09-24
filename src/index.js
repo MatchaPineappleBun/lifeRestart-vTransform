@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 import commander from 'commander';
-import { readFile } from 'fs/promises';
+//import { readFile } from 'fs/promises';
 import { readXLSX, writeJSON, jobs as getJobs } from './io.js';
 import { jobs as doJobs } from './transform/index.js';
+import { createRequire } from 'module' ;
+const require = createRequire(import.meta.url);
+const { readFile } = require('fs').promises;
 
 commander
     .command('version')
