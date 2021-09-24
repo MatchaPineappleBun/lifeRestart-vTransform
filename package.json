@@ -6,8 +6,8 @@
   "type": "module",
   "version": "1.0.1",
   "main": "index.js",
-  "repository": "https://github.com/VickScarlet/vTransform.git",
-  "author": "Vick Scarlet <scarlet_vick@outlook.com>",
+  "repository": "https://github.com/MatchaPineappleBun/lifeRestart-vTransform.git",
+  "author": "MatchaPineappleBun <11595905843@qq.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^8.2.0",
