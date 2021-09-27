@@ -1,6 +1,9 @@
-import { readFile, writeFile, stat, readdir } from 'fs/promises';
+//import { readFile, writeFile, stat, readdir } from 'fs/promises';
 import * as XLSX from 'xlsx';
 import { join, extname, dirname, resolve } from 'path';
+import { createRequire } from 'module' ;
+const require = createRequire(import.meta.url);
+const { readFile, writeFile, stat, readdir } = require('fs').promises;
 
 
 async function readXLSX(xlsxPath) {
